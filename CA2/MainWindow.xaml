@@ -10,7 +10,7 @@
         <RadioButton x:Name="rdoAll" Content="All&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,97,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdoAir" Content="Air" HorizontalAlignment="Left" Margin="59,237,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdoWater" Content="Water" HorizontalAlignment="Left" Margin="59,189,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdoLand" Content="Land" HorizontalAlignment="Left" Margin="59,140,0,0" VerticalAlignment="Top" Checked="rdoLand_Checked"/>
+        <RadioButton x:Name="rdoLand" Content="Land" HorizontalAlignment="Left" Margin="59,140,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnMoveRight" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="380,140,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btnMoveLeft" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="380,207,0,0" VerticalAlignment="Top" Width="75"/>
         <ListBox HorizontalAlignment="Left" Height="177" Margin="153,97,0,0" VerticalAlignment="Top" Width="202"/>
