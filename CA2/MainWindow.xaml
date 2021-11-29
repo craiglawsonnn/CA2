@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <RadioButton x:Name="rdoAll" Content="All&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdoAir" Content="Air" HorizontalAlignment="Left" Margin="59,237,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdoWater" Content="Water" HorizontalAlignment="Left" Margin="59,189,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdoLand" Content="Land" HorizontalAlignment="Left" Margin="59,140,0,0" VerticalAlignment="Top" Checked="rdoLand_Checked"/>
+        <Button x:Name="btnMoveRight" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="380,140,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnMoveLeft" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="380,207,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox HorizontalAlignment="Left" Height="177" Margin="153,97,0,0" VerticalAlignment="Top" Width="202"/>
+        <ListBox HorizontalAlignment="Left" Height="177" Margin="496,97,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label Content="Activity Planner" HorizontalAlignment="Left" Height="50" Margin="153,26,0,0" VerticalAlignment="Top" Width="182" FontFamily="Segoe UI Semilight" FontSize="25" Background="{x:Null}" Foreground="#FF00AFB8" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.3" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Total Cost" HorizontalAlignment="Left" Margin="496,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Selected Activities" HorizontalAlignment="Left" Margin="496,71,0,0" VerticalAlignment="Top"/>
+        <Label Content="All Activities" HorizontalAlignment="Left" Margin="153,71,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Description&#xD;&#xA;" HorizontalAlignment="Left" Margin="153,299,0,0" VerticalAlignment="Top" Width="103" Height="27"/>
+        <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="153,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283"/>
+
     </Grid>
 </Window>
