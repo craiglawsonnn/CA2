@@ -22,5 +22,10 @@ namespace CA2
 
         public enum TypeOfActivity { Air, Water, Land }
 
+        public override string ToString()
+        {
+            return $"{Name} - {ActivityDate.ToShortDateString()}";
+        }
+
     }
 }
