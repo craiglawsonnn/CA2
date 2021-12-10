@@ -7,28 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="336*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="31*"/>
             <ColumnDefinition Width="365*"/>
         </Grid.ColumnDefinitions>
-        <RadioButton x:Name="rdoAll" Content="All&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="rdoAir" Content="Air" HorizontalAlignment="Left" Margin="59,237,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="rdoWater" Content="Water" HorizontalAlignment="Left" Margin="59,189,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="rdoLand" Content="Land" HorizontalAlignment="Left" Margin="59,140,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnMoveRight" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="318.454,140,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-        <Button x:Name="btnMoveLeft" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="318.454,207,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-        <ListBox x:Name="lbxAllActivities" HorizontalAlignment="Left" Height="177" Margin="91.454,97,0,0" VerticalAlignment="Top" Width="202" Grid.Column="1" GotFocus="lbxAllActivities_GotFocus"/>
-        <ListBox x:Name="lbxSelectedActivities" HorizontalAlignment="Left" Height="177" Margin="434.454,97,0,0" VerticalAlignment="Top" Width="221" Grid.Column="1"/>
-        <Label Content="Activity Planner" HorizontalAlignment="Left" Height="50" Margin="91.454,26,0,0" VerticalAlignment="Top" Width="182" FontFamily="Segoe UI Semilight" FontSize="25" Background="{x:Null}" Foreground="#FF00AFB8" FontWeight="Bold" Grid.Column="1">
+        <RadioButton x:Name="rdoAll" Content="All&#xD;&#xA;" HorizontalAlignment="Left" Margin="59,14.336,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1" Checked="rdoAll_Checked"/>
+        <RadioButton x:Name="rdoAir" Content="Air" HorizontalAlignment="Left" Margin="59,154.336,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1" Checked="rdoAll_Checked"/>
+        <RadioButton x:Name="rdoWater" Content="Water" HorizontalAlignment="Left" Margin="59,106.336,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1" Checked="rdoAll_Checked"/>
+        <RadioButton x:Name="rdoLand" Content="Land" HorizontalAlignment="Left" Margin="59,57.336,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1" Checked="rdoAll_Checked"/>
+        <Button x:Name="btnMoveRight" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="335,57.336,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.Row="1" Click="btnMoveRight_Click"/>
+        <Button x:Name="btnMoveLeft" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="335,130.336,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.Row="1" Click="btnMoveLeft_Click"/>
+        <ListBox x:Name="lbxAllActivities" HorizontalAlignment="Left" Height="197" Margin="91,14.336,0,0" VerticalAlignment="Top" Width="225" Grid.Column="1" Grid.Row="1" SelectionChanged="lbxAllActivities_SelectionChanged"/>
+        <ListBox x:Name="lbxSelectedActivities" HorizontalAlignment="Left" Height="197" Margin="434,14.336,0,0" VerticalAlignment="Top" Width="225" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Activity Planner" HorizontalAlignment="Left" Height="50" Margin="91,26,0,0" VerticalAlignment="Top" Width="182" FontFamily="Segoe UI Semilight" FontSize="25" Background="{x:Null}" Foreground="#FF00AFB8" FontWeight="Bold" Grid.Column="1">
             <Label.Effect>
                 <DropShadowEffect BlurRadius="2" Opacity="0.3" ShadowDepth="2"/>
             </Label.Effect>
         </Label>
-        <Label Content="Total Cost" HorizontalAlignment="Left" Margin="434.454,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Selected Activities" HorizontalAlignment="Left" Margin="434.454,71,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="All Activities" HorizontalAlignment="Left" Margin="91.454,71,0,0" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
-        <Label Content="Description&#xD;&#xA;" HorizontalAlignment="Left" Margin="91.454,299,0,0" VerticalAlignment="Top" Width="103" Height="27" Grid.Column="1"/>
-        <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="91.454,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Grid.Column="1"/>
+        <Label Content="Total Cost" HorizontalAlignment="Left" Margin="434,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Selected Activities" HorizontalAlignment="Left" Margin="434,71,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Content="All Activities" HorizontalAlignment="Left" Margin="91,71,0,0" VerticalAlignment="Top" Width="103" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Content="Description&#xD;&#xA;" HorizontalAlignment="Left" Margin="91,216.336,0,0" VerticalAlignment="Top" Width="103" Height="27" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="91,243.336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="tblkTotalCost" HorizontalAlignment="Left" Margin="501,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Grid.Column="1" Height="26"/>
 
     </Grid>
 </Window>
